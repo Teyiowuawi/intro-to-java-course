@@ -26,7 +26,7 @@ public class FizzBuzzTests {
     @ParameterizedTest
     @MethodSource("numbersToTest")
     @DisplayName("return expected value")
-    public void returnExpectedValue(Integer number, String expected){
+    public void returnExpectedValue(int number, String expected){
         final String actual = FizzBuzz.of(number);
         assertThat(actual, is(expected));
     }
