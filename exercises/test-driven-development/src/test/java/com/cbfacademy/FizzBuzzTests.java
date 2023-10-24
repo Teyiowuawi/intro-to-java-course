@@ -19,14 +19,16 @@ public class FizzBuzzTests {
         return Stream.of(
             arguments(1, "1"),
             arguments(2, "2"),
-            arguments(3, "Fizz")
+            arguments(3, "Fizz"),
+            arguments(4, "4")
+
         );
     }
 
     @ParameterizedTest
     @MethodSource("numbersToTest")
     @DisplayName("return expected value")
-    public void returnExpectedValue(int number, String expected){
+    public void returnExpectedValue(Integer number, String expected){
         final String actual = FizzBuzz.of(number);
         assertThat(actual, is(expected));
     }
