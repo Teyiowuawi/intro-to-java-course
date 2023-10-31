@@ -1,13 +1,17 @@
 package com.cbfacademy.copier;
 
 public class DestinationSpy implements Destination{
-    private boolean destinationMethodWasCalled;
+    private Integer numberOfCalls;
 
     @Override
-    public char setChar(char character) {
-        this.destinationMethodWasCalled = true;
-        return char;
+    public void setChar(char character) {
+        this.numberOfCalls = this.numberOfCalls +1;
+    }
+
+    Boolean wasCalled(){
+        return this.numberOfCalls > 0;
+    }
+        
 
     }
-    
-}
+

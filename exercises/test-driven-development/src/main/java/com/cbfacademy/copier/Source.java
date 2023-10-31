@@ -1,6 +1,6 @@
-package com.cbfacademy;
+package com.cbfacademy.copier;
 
 public interface Source {
   
-    Char getChar();
+    char getChar();
 }

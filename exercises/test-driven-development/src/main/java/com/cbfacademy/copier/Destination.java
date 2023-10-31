@@ -1,6 +1,6 @@
-package com.cbfacademy;
+package com.cbfacademy.copier;
 
 public interface Destination {
 
-    char setChar(char character);
+     void setChar(char character);
 }
