@@ -11,7 +11,6 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
-
 @DisplayName("Should return a number, Fizz, Buzz or FizzBuzz")
 public class FizzBuzzTests {
     
@@ -32,8 +31,6 @@ public class FizzBuzzTests {
             arguments(13, "13"),
             arguments(14, "14"),
             arguments(15, "FizzBuzz")
-
-
         );
     }
 
